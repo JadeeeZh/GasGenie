@@ -1,0 +1,31 @@
+{
+    "name": "Gas Genie",
+    "description": "AI-powered gas price predictor and transaction optimizer",
+    "version": "1.0.0",
+    "endpoints": {
+        "assist": {
+            "path": "/assist",
+            "method": "POST"
+        },
+        "health": {
+            "path": "/health",
+            "method": "GET"
+        }
+    },
+    "environment": {
+        "required": [
+            "MODEL_API_KEY",
+            "ETHERSCAN_API_KEY"
+        ],
+        "optional": [
+            "PORT",
+            "HOST",
+            "LOG_LEVEL"
+        ]
+    },
+    "capabilities": [
+        "gas_price_prediction",
+        "transaction_optimization",
+        "wait_send_recommendation"
+    ]
+} 
